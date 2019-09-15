@@ -1,6 +1,6 @@
 # todoey_flutter
 
-A new Flutter application.
+A todo list Flutter project by the [App Brewery's course](https://www.appbrewery.co/p/flutter-development-bootcamp-with-dart).
 
 ## Getting Started
 
