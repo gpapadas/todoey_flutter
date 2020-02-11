@@ -13,13 +13,18 @@ class TaskData extends ChangeNotifier {
     return _tasks.length;
   }
 
-// An unmodifiable [List] view of another List.
+  // An unmodifiable [List] view of another List.
   UnmodifiableListView<Task> get tasks {
     return UnmodifiableListView(_tasks);
   }
 
   void addTask(String newTaskTitle) {
     _tasks.add(Task(name: newTaskTitle));
+    notifyListeners();
+  }
+
+  void updateTask(Task task) {
+    task.toggleDone();
     notifyListeners();
   }
 }
