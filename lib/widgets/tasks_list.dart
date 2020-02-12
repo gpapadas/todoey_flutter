@@ -24,6 +24,9 @@ class TasksList extends StatelessWidget {
               //   widget.tasks[index].toggleDone();
               // });
             },
+            longPressCallback: () {
+              taskData.deleteTask(task);
+            },
           );
         },
         itemCount: taskData.taskCount,
